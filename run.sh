@@ -6,7 +6,7 @@ TRAIN_START="${TRAIN_START:-2000-01-01}"
 TRAIN_END="${TRAIN_END:-2025-12-31}"
 CUTOFF="${CUTOFF:-2025-12-31}"
 TEST_FILE="${TEST_FILE:-data/raw/test_fixtures.json}"
-MODEL_PATH="${MODEL_PATH:-model_artifacts/fantasy_t20_model_v3_${TRAIN_END}.pkl}"
+MODEL_PATH="${MODEL_PATH:-model_artifacts/model_${TRAIN_END}.pkl}"
 OUTPUT_PATH="${OUTPUT_PATH:-results/hidden_predictions.csv}"
 
 "$PYTHON_BIN" src/download_data.py --raw-dir data/raw --manifest data/raw/download_manifest.json

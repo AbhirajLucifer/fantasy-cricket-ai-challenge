@@ -3,7 +3,7 @@ TRAIN_START ?= 2000-01-01
 TRAIN_END ?= 2025-12-31
 CUTOFF ?= 2025-12-31
 TEST_FILE ?= data/raw/test_fixtures.json
-MODEL ?= model_artifacts/fantasy_t20_model_v3_$(TRAIN_END).pkl
+MODEL ?= model_artifacts/model_$(TRAIN_END).pkl
 OUTPUT ?= results/hidden_predictions.csv
 
 .PHONY: setup download check test train evaluate all

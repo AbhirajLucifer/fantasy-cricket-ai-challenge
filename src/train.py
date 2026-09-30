@@ -30,7 +30,7 @@ def main() -> None:
     parser.add_argument("--processed-path", type=Path, default=Path("data/processed/player_match_features.csv"))
     parser.add_argument("--selection-path", type=Path, default=Path("data/processed/player_selection_features.csv"))
     parser.add_argument("--model-path", type=Path, default=None)
-    parser.add_argument("--metrics-path", type=Path, default=Path("reports/metrics.json"))
+    parser.add_argument("--metrics-path", type=Path, default=Path("reports/v3_metrics.json"))
     parser.add_argument(
         "--match-type", action="append", dest="match_types",
         help="Cricsheet match type to include; repeat to include more than one (default: T20)",
@@ -103,7 +103,7 @@ def main() -> None:
     final_model = BlendedRegressor(final_absolute_model, final_mean_model, absolute_weight=0.6)
     final_selection_model = build_selection_model()
     final_selection_model.fit(selection_frame[FEATURES], selection_frame["selected"])
-    model_path = args.model_path or Path(f"model_artifacts/fantasy_t20_model_v3_{args.train_end.isoformat()}.pkl")
+    model_path = args.model_path or Path(f"model_artifacts/model_{args.train_end.isoformat()}.pkl")
     model_path.parent.mkdir(parents=True, exist_ok=True)
     artifact = {
         "model": final_model,
