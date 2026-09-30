@@ -11,6 +11,9 @@ model_artifacts/*
 !model_artifacts/fantasy_t20_model_v3_2025-12-31.pkl
 results/*
 !results/.gitkeep
+!results/README.md
+!results/example_predictions.csv
+!results/hidden_predictions.csv
 reports/rendered*/
 reports/*_preview.pdf
 reports/*.zip

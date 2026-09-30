@@ -76,6 +76,17 @@ The parser accepts either a list or an object containing `fixtures`, `matches`, 
 
 The output has the required match fields. The selected players are ordered by predicted points. Players and roles are encoded as JSON in one CSV cell so names containing commas remain safe.
 
+An executable schema example is provided at `tests/test_fixture.json`, with its verified output at `results/example_predictions.csv`. This example proves the complete model-to-CSV path; it is not a substitute for the official hidden-test predictions.
+
+### Submission checklist
+
+- `README.md` documents setup, dependencies, training, evaluation, and run commands.
+- `requirements.txt` pins the Python dependencies.
+- `run.sh` and `Makefile` provide reproducible entry points.
+- `model_artifacts/fantasy_t20_model_v3_2025-12-31.pkl` is the ready model.
+- `results/example_predictions.csv` verifies the required output schema.
+- `results/hidden_predictions.csv` is generated from the official hidden fixture using the command above. It must not be fabricated from the example fixture.
+
 ## One-command execution
 
 ```bash
@@ -111,4 +122,5 @@ MAE is the primary point-forecast metric because its units are fantasy points an
 ## Deliverables
 
 - Validation metrics after training: `reports/v3_metrics.json`
+- Verified output example: `results/example_predictions.csv`
 - Hidden predictions after evaluation: `results/hidden_predictions.csv`
