@@ -1,0 +1,27 @@
+[
+  {
+    "match_date": "2025-12-30",
+    "team1": "Alpha",
+    "team2": "Beta",
+    "venue": "Example Ground",
+    "squads": {
+      "Alpha": [
+        {"name": "A WK", "role": "Wicket-Keeper"}, {"name": "A Bat 1", "role": "Batsman"},
+        {"name": "A Bat 2", "role": "Batsman"}, {"name": "A Bat 3", "role": "Batsman"},
+        {"name": "A Bat 4", "role": "Batsman"}, {"name": "A AR 1", "role": "All-Rounder"},
+        {"name": "A AR 2", "role": "All-Rounder"}, {"name": "A Bowl 1", "role": "Bowler"},
+        {"name": "A Bowl 2", "role": "Bowler"}, {"name": "A Bowl 3", "role": "Bowler"},
+        {"name": "A Bowl 4", "role": "Bowler"}
+      ],
+      "Beta": [
+        {"name": "B WK", "role": "Wicket-Keeper"}, {"name": "B Bat 1", "role": "Batsman"},
+        {"name": "B Bat 2", "role": "Batsman"}, {"name": "B Bat 3", "role": "Batsman"},
+        {"name": "B Bat 4", "role": "Batsman"}, {"name": "B AR 1", "role": "All-Rounder"},
+        {"name": "B AR 2", "role": "All-Rounder"}, {"name": "B Bowl 1", "role": "Bowler"},
+        {"name": "B Bowl 2", "role": "Bowler"}, {"name": "B Bowl 3", "role": "Bowler"},
+        {"name": "B Bowl 4", "role": "Bowler"}
+      ]
+    }
+  }
+]
+

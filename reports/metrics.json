@@ -1,0 +1,117 @@
+{
+  "dataset": {
+    "rows": 26137,
+    "train_rows": 20972,
+    "validation_rows": 5165
+  },
+  "validation": {
+    "mae": 27.143158532898124,
+    "rmse": 34.45807441713997,
+    "spearman": 0.17032836444312116,
+    "n": 5165,
+    "period_start": "2023-04-02",
+    "period_end": "2025-06-03"
+  },
+  "ablations": {
+    "constant_median": {
+      "mae": 27.011810261374638,
+      "rmse": 35.71487605652324,
+      "spearman": 0.0,
+      "n": 5165
+    },
+    "recent_5_only": {
+      "mae": 28.90656018070345,
+      "rmse": 37.06904746890179,
+      "spearman": 0.1677392716908863,
+      "n": 5165
+    },
+    "model_without_team_venue_opponent": {
+      "mae": 27.109370709971813,
+      "rmse": 34.459296752937874,
+      "spearman": 0.17000617317896485,
+      "n": 5165
+    }
+  },
+  "permutation_importance": [
+    {
+      "feature": "career_avg",
+      "mae_increase": 0.4724966696048263
+    },
+    {
+      "feature": "recent_10",
+      "mae_increase": 0.2689309124601837
+    },
+    {
+      "feature": "recent_5",
+      "mae_increase": 0.13707808823424492
+    },
+    {
+      "feature": "bowling_avg",
+      "mae_increase": 0.10507025998153215
+    },
+    {
+      "feature": "batting_avg",
+      "mae_increase": 0.04114795334642096
+    },
+    {
+      "feature": "appearance_rate_10",
+      "mae_increase": 0.034014854853529876
+    },
+    {
+      "feature": "fielding_avg",
+      "mae_increase": 0.016231030988491806
+    },
+    {
+      "feature": "recent_3",
+      "mae_increase": 0.01429688722139725
+    },
+    {
+      "feature": "opponent",
+      "mae_increase": 0.005909758403313721
+    },
+    {
+      "feature": "venue_avg",
+      "mae_increase": 0.0032937663824448293
+    },
+    {
+      "feature": "month",
+      "mae_increase": 0.002460930130052219
+    },
+    {
+      "feature": "match_type",
+      "mae_increase": 0.0
+    },
+    {
+      "feature": "gender",
+      "mae_increase": 0.0
+    },
+    {
+      "feature": "role",
+      "mae_increase": -6.540825706480291e-05
+    },
+    {
+      "feature": "rest_days",
+      "mae_increase": -0.0032485241471332436
+    },
+    {
+      "feature": "experience",
+      "mae_increase": -0.007785604189400885
+    },
+    {
+      "feature": "recent_std",
+      "mae_increase": -0.010002090160506091
+    },
+    {
+      "feature": "team",
+      "mae_increase": -0.013720374393979995
+    },
+    {
+      "feature": "opponent_avg",
+      "mae_increase": -0.0159368134396279
+    },
+    {
+      "feature": "venue",
+      "mae_increase": -0.02405471755892208
+    }
+  ]
+}

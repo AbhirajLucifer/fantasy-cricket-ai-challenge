@@ -1,0 +1,120 @@
+{
+  "dataset": {
+    "rows": 281663,
+    "train_rows": 196432,
+    "validation_rows": 85231,
+    "match_types": [
+      "T20"
+    ]
+  },
+  "validation": {
+    "mae": 26.094879467552285,
+    "rmse": 34.00776413030602,
+    "spearman": 0.36002098795115733,
+    "n": 85231,
+    "period_start": "2023-10-06",
+    "period_end": "2025-12-31"
+  },
+  "ablations": {
+    "constant_median": {
+      "mae": 27.44614048878929,
+      "rmse": 37.22574446806978,
+      "spearman": 0.0,
+      "n": 85231
+    },
+    "recent_5_only": {
+      "mae": 27.587950198089118,
+      "rmse": 36.99528993710342,
+      "spearman": 0.3049146349930494,
+      "n": 85231
+    },
+    "model_without_team_venue_opponent": {
+      "mae": 26.12223872200995,
+      "rmse": 34.064855912064914,
+      "spearman": 0.35656717862462534,
+      "n": 85231
+    }
+  },
+  "permutation_importance": [
+    {
+      "feature": "career_avg",
+      "mae_increase": 0.8957683252221121
+    },
+    {
+      "feature": "bowling_avg",
+      "mae_increase": 0.37312112104300493
+    },
+    {
+      "feature": "gender",
+      "mae_increase": 0.19498157451634532
+    },
+    {
+      "feature": "recent_10",
+      "mae_increase": 0.19035514975059087
+    },
+    {
+      "feature": "recent_5",
+      "mae_increase": 0.18354803741959577
+    },
+    {
+      "feature": "experience",
+      "mae_increase": 0.1196822219262413
+    },
+    {
+      "feature": "recent_3",
+      "mae_increase": 0.10174319316756215
+    },
+    {
+      "feature": "venue_avg",
+      "mae_increase": 0.05502507879220294
+    },
+    {
+      "feature": "batting_avg",
+      "mae_increase": 0.040377270924752885
+    },
+    {
+      "feature": "rest_days",
+      "mae_increase": 0.03354581222174602
+    },
+    {
+      "feature": "opponent_avg",
+      "mae_increase": 0.0331931540661472
+    },
+    {
+      "feature": "opponent",
+      "mae_increase": 0.031364281835928175
+    },
+    {
+      "feature": "fielding_avg",
+      "mae_increase": 0.0297604241161397
+    },
+    {
+      "feature": "month",
+      "mae_increase": 0.028558565457209067
+    },
+    {
+      "feature": "appearance_rate_10",
+      "mae_increase": 0.019971785293114646
+    },
+    {
+      "feature": "venue",
+      "mae_increase": 0.01920633860284345
+    },
+    {
+      "feature": "role",
+      "mae_increase": 0.018631034654017498
+    },
+    {
+      "feature": "team",
+      "mae_increase": 0.017288456349137487
+    },
+    {
+      "feature": "recent_std",
+      "mae_increase": 0.014940929785486409
+    },
+    {
+      "feature": "match_type",
+      "mae_increase": 0.0
+    }
+  ]
+}
